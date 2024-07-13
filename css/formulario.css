@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul-bg-color: #062e5c;
+    --naranja-bg-color: #ff9000;
+    --gris--bg--color: rgb(197, 192, 192);
+    --blanco--bg-color: white;
+}
+body{
+    background-color: var(--gris--bg--color);
+    font-family: 'Cosmos', Helvetica, Arial, sans-serif !important;
+}
+
+/******** COMIENZO DEL NAVEGAFOR*****/
+.header{
+    width: 100%;
+    height: 100px;
+    
+}
+.nav{
+ display: flex;
+ justify-content: space-around;
+}
+.imagen img{
+   width: auto;
+   height: 60px;
+   position: relative;
+   top: 15px;
+}
+.time{
+    position: relative;
+    top:75px;
+    width: max-content;
+}
+.img_Data{
+    position: relative;
+    top:75px;
+    width: max-content;  
+}
+.data{
+    color: var(--azul-bg-color);
+    font-weight: 900;
+    font-size: 20px;
+}
+/******** COMIENZO DEL NAVEGAFOR*****/
+
+/*****COMIENZO SECCIÓN*********/
+.subSeccion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px;
+  
+}
+.containerFormulario{
+    background-color: var(--azul-bg-color);
+    display: flex;
+    flex-direction: column;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px 1px  #352525;
+}
+.informacion{
+   display: flex;
+   flex-direction: column; 
+   width: 50%;
+ 
+   
+}
+.PersonaEmpresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+   
+}
+.persona{
+    background-color: var(--blanco--bg-color);
+    flex-grow: 1;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px  0 0;
+    text-align: center;
+}
+.empresa{
+    background-color: var(--gris--bg--color);
+    flex-grow: 1;
+    padding: 10px;
+    font-weight: 600;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+.containerAzul{
+    padding: 40px;
+    
+}
+.containerAzul h2{
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+}
+.containerAzul p, h2{
+    color: var(--blanco--bg-color);
+    text-align: center;
+}
+.credenciales{
+    font-size: 15px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    
+}
+.containerTargeta{
+    display: flex;
+    border-radius:  4px;
+    border: solid 1px var(--blanco--bg-color);
+
+
+}
+.debitoCredito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: var(--naranja-bg-color);
+}
+.debitoCredito p{
+    padding: 10px;
+    
+}
+.bod{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  flex-grow: 1;
+}
+
+.input{
+  height: 40px;
+  width: 750px;
+  border-radius: 5px;
+
+  outline: none;
+}
+.mensaje{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(216, 11, 11);
+    font-family: Arial;
+    font-weight: 500;
+    box-shadow: 0 0 2px #a2a2a2;
+}
+.enviado{
+    position: relative;
+     bottom:  10px;
+     text-align: center;
+    font-size: 15px;
+    color: rgb(9, 236, 66);
+    font-family: Arial;
+    font-weight: 500;
+    box-shadow: 0 0 2px #a2a2a2;
+}
+
+input:valid:hover{
+    border: 2px solid var(--naranja-bg-color);
+  }
+::placeholder {
+    color: var(--gris--bg--color);
+     font-size: 18px;
+    
+  }
+button{
+    height: 40px;
+    width: 750px;
+    background-color: #078aef; 
+    border-radius: 5px;
+    color: var(--blanco--bg-color);
+    font-weight:700;
+    cursor: pointer;
+    opacity: 0.7;
+    
+   
+  
+}
+button:active{
+    transform: scale(0.9);
+}
+.contraseña{
+    cursor: pointer;
+    font-size: 15px;
+}
+.ssl {
+    display: flex;
+    gap: 50px;
+}
+.ssl p{
+    font-size: 12px;
+    flex-grow: 1;
+}
+.textoClic{
+    font-size: 70px;
+    font-weight: 900;
+    color: var(--azul-bg-color);
+}
+.textoRealizar{
+    color: var(--azul-bg-color);   
+}
+.containerTresImg{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+gap: 10px;
+
+}
+.primera, .segunda, .tercera{
+    
+    background-color: var(--azul-bg-color);
+    padding: 10px;
+    color: var(--blanco--bg-color);
+    border-radius: 5px;
+    line-height: 1.5;
+    box-shadow: 50px var(--gris--bg--color);
+    box-shadow: 5px 5px 5px 1px  #352525;
+    width: 32.5%;
+    
+}
+
+.containerImg{
+    display: flex;
+ 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.llamar{
+    color: var(--blanco--bg-color);
+    background-color: var(--azul-bg-color);
+    border-radius: 5px;
+
+    
+}
+.llamarUno{
+    display: flex;
+    padding: 20px 20px;
+    gap: 25px;
+    align-items: center;
+}
+.texto{
+    width: 550px;
+}
+.linea{
+    width: 100%;
+    height: 1px;
+    background-color: var(--blanco--bg-color);
+    opacity: 0.5;
+}
+.redSocial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 5px 5px 5px 1px  #352525;
+}
+.iconos{
+    display: flex;
+    gap: 20px;
+}
+.iconos img{
+    width: 30px;
+    
+}
+.youtube{
+    background-color: red;
+    padding: 5px;
+    border-radius: 50%;
+}
+.x{
+    background-color: #3591f8;
+    padding: 5px;
+    border-radius: 50%;
+}
+.linkedin{
+    background-color: #078aef;
+    padding: 5px;
+    border-radius: 50%;
+}
+.facebook{
+    background-color: #131c46;
+    padding: 5px;
+    border-radius: 50%;  
+}
+.instagram{
+    
+ 
+    border-radius: 50%;   
+}
+@media(max-width: 768px) {
+    .data{
+        font-size: 13px;
+    }
+    .subSeccion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .textoClic{
+        font-size: 30px;
+        width:max-content;
+        
+    }
+    .containerFormulario{
+      width: 365px;
+      position: relative;
+      top: 15px;
+    }
+    .informacion{
+        width: 370px;
+    }
+    .input{
+        width: 290px;
+      }
+     
+      button{
+        width: 290px;
+      }
+      .textoRealizar{
+        width: 390px;
+        position: relative;
+        right: 10px;
+        line-height: 1.5; 
+    }
+    .primera, .segunda, .tercera{
+       width: 350px;
+        }
+  }
+
+  @media(max-width: 375px) {
+
+    .textoRealizar{
+        left: 20px;
+        width:300px;
+    }
+ 
+  }
+/******FIN SECCIÓN****************/

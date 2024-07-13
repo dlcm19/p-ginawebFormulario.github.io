@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --azul-bg-color: #062e5c;
+    --naranja-bg-color: #ff9000;
+    --blanco--bg-color: white;
+    --gris--bg--color: grey;
+    --lineaSeparadora--color: #fff;
+    --colorSecundarioFondo--: rgba(0, 59, 135, 0.5);
+
+}
+
+body {
+    background-color: var(--blanco--bg-color);
+    font-family: 'Cosmos', Helvetica, Arial, sans-serif !important;
+
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+   
+  
+  
+  }
+  
+  .container-nav {
+    background-color: var(--blanco--bg-color);
+    box-shadow: 0px 1px 4px var(--gris--bg--color);
+  }
+  
+  .subContainer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .subContainer-nav-logo {
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .subContainer-nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .container-nav-somosBnc {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: max-content;
+    padding-top: 10px;
+  }
+  
+  .container-somosBnc {
+    cursor: pointer;
+    color: var(--azul-bg-color);
+  }
+  
+  .menu-separadorBNC {
+    margin: 7px;
+    width: 100px;
+    border: 1px solid var(--gris--bg--color);
+  }
+  
+  .link-nav {
+    filter: drop-shadow(10px 10px 20px var(--azul-bg-color));
+    color: var(--azul-bg-color);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .link-nav:hover {
+    color: var(--naranja-bg-color);
+  }
+  
+  .container-nav-quieroUnaCuenta {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    gap: 15px;
+    background-color: var(--blanco--bg-color);
+    justify-content: center;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px var(--gris--bg--color);
+    top: 78px;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+   
+  }
+  .dropdown-menu a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 3px;
+    cursor: pointer;
+    width: max-content;
+    font-weight: bold;
+  }
+  
+  .dropdown-menu a:hover {
+    color: var(--naranja-bg-color);
+  }
+  
+  .boton-desplegable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0;
+   
+  }
+  
+  .btn-spanUno,
+  .btn-spanDos,
+  .btn-spanTres {
+    width: 30px;
+    height: 4px;
+    background: var(--azul-bg-color);
+  }
+  
+  @media(max-width: 768px) {
+    .container-nav-somosBnc {
+      display: none;
+  
+    }
+  
+    .container-nav-quieroUnaCuenta {
+      display: none;
+  
+    }
+  }
+  
+  /**COMIENZO DEL MENU DESPLEGABLE**/
+  .container-menuDesplegable {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    
+    background-color: var(--colorSecundarioFondo--);
+  }
+  
+  .subContainer-menuDesplegable {
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-bg-color);
+    padding: 30px 0px 30px 80px;
+    gap: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .subContainer-menuDesplegable_visible {
+    
+    z-index: 1;
+    position: relative;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-bg-color);
+    padding: 30px 0px 30px 80px;
+    gap: 5px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .menu-separador {
+    margin: 2rem 0;
+    width: 45%;
+    border: 1px solid var(--blanco--bg-color);
+  }
+  
+  .container-redSocial {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .subContainer-redSocial img {
+    width: 2.6rem;
+    margin-right: 1.6rem;
+  }
+  
+  .menu h3 {
+    color: var(--blanco--bg-color);
+    font-size: 24px;
+    width: max-content;
+  }
+  
+  .menu-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    width: max-content;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 20px
+  }
+  
+  .menu-item a {
+    color: var(--blanco--bg-color);
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  
+  .menu-item a:hover {
+    color: var(--naranja-bg-color);
+  }
+  
+  .icono {
+    width: 40px;
+    height: 20px;
+    transform: scale(1.2);
+  }
+  
+  @media(max-width: 768px) {
+    .subContainer-menuDesplegable {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      overflow: auto;
+      padding: 20px 20px 30px 10px;
+      width: max-content;
+    }
+  
+    .container-redSocial {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+  
+    .subContainer-redSocial img {
+      width: 30px;
+    }
+  }
+  
+  @media(max-width: 1024px) {
+    .subContainer-menuDesplegable {
+      overflow-y: scroll;
+    }
+  }
+  
+  /*************FIN DEL NAVEGADOR******/

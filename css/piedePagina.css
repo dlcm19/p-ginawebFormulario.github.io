@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+:root{
+    --color--fondo--:#333;
+    --blanco--bg-color: white;
+}
+.container{
+    background-color: var(--color--fondo--);
+    height: 100%;
+    font-family: 'Cosmos', Helvetica, Arial, sans-serif !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: var(--blanco--bg-color);
+}
+@media(max-width: 768px) {
+    p{
+      margin-left: 30px;
+      font-size:small;
+    }
+}
